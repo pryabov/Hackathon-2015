@@ -1,0 +1,524 @@
+﻿@using System.Web.UI.WebControls
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+ <!--<![endif]-->
+<head>
+	<title>Azure WebSite</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="@Url.Content("~/Content/img/favicon.jpg")">
+
+	<!-- Web Fonts -->
+	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+	@Styles.Render("~/Content/mainCss")
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!--=== Header ===-->
+		<div class="header">
+			<div class="container">
+				<!-- Logo -->
+				<a class="logo" href="#">
+					<img src="@Url.Content("~/content/img/Tehathon-Logo.png")" alt="Logo" height="60">
+				</a>
+				<!-- End Logo -->
+				<!-- Topbar -->
+				<div class="topbar">
+					<ul class="loginbar pull-right">
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<!-- End Topbar -->
+				<!-- Toggle get grouped for better mobile display -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-bars"></span>
+				</button>
+				<!-- End Toggle -->
+			</div><!--/end container-->
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<!-- Home -->
+						<li class="active">
+							<a href="javascript:void(0);" class="dropdown-toggle">
+								Home
+							</a>
+						</li>
+						<!-- End Home -->
+						<!-- Pages -->
+						<li class="">
+							<a href="javascript:void(0);" class="dropdown-toggle">
+								About Us
+							</a>
+						</li>
+						<!-- End Pages -->
+					</ul>
+				</div><!--/end container-->
+			</div><!--/navbar-collapse-->
+		</div>
+		<!--=== End Header ===-->
+		<!--=== Slider ===-->
+		<div id="sequence-theme" class="sequence-inner">
+			<div id="sequence">
+				<img class="prev" src="@Url.Content("~/content/plugins/horizontal-parallax/images/bt-prev1.png")" alt="Previous" />
+				<img class="next" src="@Url.Content("~/content/plugins/horizontal-parallax/images/bt-next1.png")" alt="Next" />
+				<ul>
+					<li class="animate-in">
+						<div class="info">
+							<h2>Summer 2015</h2>
+							<p>Hackathon</p>
+						</div>
+						<img class="balloon" src="@Url.Content("~/content/plugins/horizontal-parallax/images/balloon.png")" alt="Balloon" />
+					</li>
+					<li>
+						<div class="info">
+							<h2>Creative Teams</h2>
+							<p>New Projects</p>
+						</div>
+						<img class="aeroplane" src="@Url.Content("~/content/plugins/horizontal-parallax/images/aeroplane.png")" alt="Aeroplane" />
+					</li>
+					<li>
+						<div class="info">
+							<h2>A Lot of Fun</h2>
+							<p>A Lot of Work</p>
+						</div>
+						<img class="kite" src="@Url.Content("~/content/plugins/horizontal-parallax/images/kite.png")" alt="Kite" />
+					</li>
+				</ul>
+			</div>
+		</div><!--/sequence-theme-->
+		<!--=== End Slider ===-->
+		<!--=== Purchase Block ===-->
+		<div class="purchase">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 animated fadeInLeft">
+						<span>Fusce posuere, sit amet dictum lectus lectus a Enim</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt orci eros, eu luctus risus egestas in. Nam vel ex mi. Quisque eu consectetur mauris. Maecenas id ornare risus. Quisque condimentum dapibus sem. Nullam sollicitudin eu quam non aliquam. Maecenas a dictum nibh, a rhoncus lectus. Vivamus lectus mauris, bibendum rhoncus sem in, suscipit blandit neque. Maecenas ullamcorper, enim non venenatis lobortis, metus mauris fermentum arcu, sit amet imperdiet lectus ipsum nec ligula. Praesent sodales lobortis dui eget vehicula.</p>
+					</div>
+					<div class="col-md-3 btn-buy animated fadeInRight">
+						<a href="#" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i>Start Now</a>
+					</div>
+				</div>
+			</div>
+		</div><!--/row-->
+		<!-- End Purchase Block -->
+		<!--=== Content Part ===-->
+		<div class="container content">
+			<div class="row">
+				<div class="col-md-9">
+					<!-- Welcome Block -->
+					<div class="headline"><h2>Welcome to Techathon</h2></div>
+					<div class="row">
+						<div class="col-sm-4">
+							<img class="img-responsive margin-bottom-20" src="@Url.Content("~/content/img/main/img6.jpg")" alt="" />
+						</div>
+						<div class="col-sm-8">
+							<p>Ut eu ex vitae massa bibendum congue. In facilisis et nunc vitae tristique.</p>
+							<ul class="list-unstyled margin-bottom-20">
+								<li><i class="fa fa-check color-green"></i> Donec id elit non mi porta gravida</li>
+								<li><i class="fa fa-check color-green"></i> Ut eu ex vitae massa bibendum conguetique.</li>
+								<li><i class="fa fa-check color-green"></i> Praesent tincidunt luctus</li>
+								<li><i class="fa fa-check color-green"></i> Elit, in aliquam ex pharetra ut.</li>
+							</ul>
+						</div>
+					</div>
+
+					<blockquote class="hero-unify margin-bottom-30">
+						<p>Nulla ut lobortis elit. Nulla imperdiet dignissim dolor sit amet aliquam. Nullam non placerat nulla, consequat tempus augue. Fusce ut ipsum in nisl maximus fringilla.</p>
+					</blockquote>
+					<!-- End Welcome Block -->
+					<!-- Recent Works -->
+					<div class="owl-carousel-v1 owl-work-v1 margin-bottom-40">
+						<div class="headline">
+							<h2 class="pull-left">Recent Works</h2>
+							<div class="owl-navigation">
+								<div class="customNavigation">
+									<a class="owl-btn prev-v2"><i class="fa fa-angle-left"></i></a>
+									<a class="owl-btn next-v2"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div><!--/navigation-->
+						</div>
+
+						<div class="owl-recent-works-v1">
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img1.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Happy New Year</strong>
+										<i>Anim pariatur cliche reprehenderit</i>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img2.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Award Winning Agency</strong>
+										<i>Anim pariatur cliche reprehenderit</i>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img3.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Wolf Moon Officia</strong>
+										<i>Pariatur prehe cliche reprehrit</i>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img4.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Food Truck Quinoa Nesciunt</strong>
+										<i>Craft labore wes anderson cred</i>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img5.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Happy New Year</strong>
+										<i>Anim pariatur cliche reprehenderit</i>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img1.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Happy New Year</strong>
+										<i>Anim pariatur cliche reprehenderit</i>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img2.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Award Winning Agency</strong>
+										<i>Responsive Bootstrap Template</i>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img3.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Wolf Moon Officia</strong>
+										<i>Pariatur prehe cliche reprehrit</i>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img4.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Food Truck Quinoa Nesciunt</strong>
+										<i>Craft labore wes anderson cred</i>
+									</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<em class="overflow-hidden">
+										<img class="img-responsive" src="@Url.Content("~/content/img/main/img5.jpg")" alt="">
+									</em>
+									<span>
+										<strong>Happy New Year</strong>
+										<i>Anim pariatur cliche reprehenderit</i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- End Recent Works -->
+					<!-- Tag Box -->
+					<div class="tag-box tag-box-v2">
+						<p>Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat.</p>
+					</div>
+					<!-- End Tag Box -->
+
+					<div class="clerafix margin-bottom-50"></div>
+
+					<!-- Tabs v1 -->
+					<div class="tab-v1">
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+							<li><a data-toggle="tab" href="#profile">Profile</a></li>
+							<li><a data-toggle="tab" href="#messages">Messages</a></li>
+							<li><a data-toggle="tab" href="#settings">Settings</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="home" class="tab-pane fade in active">
+								<div class="row">
+									<div class="col-md-4">
+										<img src="@Url.Content("~/content/img/main/img12.jpg")" class="img-responsive img-tab-space" alt="">
+									</div>
+									<div class="col-md-8">
+										<h4>Heading Sample 1</h4>
+										<p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum <strong>ivamus imperdiet</strong> condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque <strong>fermentum vivamus</strong> imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac felis consectetur id. Donec eget orci metusvivamus imperdiet.</p>
+									</div>
+								</div>
+							</div>
+							<div id="profile" class="tab-pane fade in">
+								<img src="@Url.Content("~/content/img/main/img5.jpg")" class="pull-left lft-img-margin img-width-200" alt="">
+								<h4>Heading Sample 2</h4>
+								<p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
+							</div>
+							<div id="messages" class="tab-pane fade in">
+								<h4>Heading Sample 3</h4>
+								<p><img src="@Url.Content("~/content/img/main/img6.jpg")" class="pull-right rgt-img-margin img-width-200" alt=""> <strong>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</strong> Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
+							</div>
+							<div id="settings" class="tab-pane fade in">
+								<h4>Heading Sample 4</h4>
+								<p><img src="@Url.Content("~/content/img/main/img1.jpg")" class="pull-right rgt-img-margin img-width-200" alt=""> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
+							</div>
+						</div>
+					</div><!--/tab-v1-->
+					<!-- End Tabs v1 -->
+				</div>
+
+				<div class="col-md-3">
+					<!-- Photo Stream -->
+					<div class="headline"><h3>Photo Stream</h3></div>
+					<ul class="list-unstyled blog-photos margin-bottom-30">
+						<li><a href="#"><img src="@Url.Content("~/content/img/sliders/elastislide/6.jpg")" alt="" class="hover-effect"></a></li>
+						<li><a href="#"><img src="@Url.Content("~/content/img/sliders/elastislide/8.jpg")" alt="" class="hover-effect"></a></li>
+						<li><a href="#"><img src="@Url.Content("~/content/img/sliders/elastislide/10.jpg")" alt="" class="hover-effect"></a></li>
+						<li><a href="#"><img src="@Url.Content("~/content/img/sliders/elastislide/11.jpg")" alt="" class="hover-effect"></a></li>
+						<li><a href="#"><img src="@Url.Content("~/content/img/sliders/elastislide/1.jpg")" alt="" class="hover-effect"></a></li>
+						<li><a href="#"><img src="@Url.Content("~/content/img/sliders/elastislide/2.jpg")" alt="" class="hover-effect"></a></li>
+						<li><a href="#"><img src="@Url.Content("~/content/img/sliders/elastislide/7.jpg")" alt="" class="hover-effect"></a></li>
+					</ul><!--/blog-photos-->
+					<!-- End Photo Stream -->
+					<!-- Choose Us -->
+					<div class="who margin-bottom-30">
+						<div class="headline"><h3>Why Choose Us</h3></div>
+						<p>Pellentesque fermentum, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</p>
+						<ul class="list-unstyled">
+							<li><a href="#"><i class="fa fa-desktop"></i>Vivamus imperdiet condimentum</a></li>
+							<li><a href="#"><i class="fa fa-bullhorn"></i>Anim pariatur cliche squid</a></li>
+							<li><a href="#"><i class="fa fa-globe"></i>Eget placerat felis consectetur</a></li>
+							<li><a href="#"><i class="fa fa-group"></i>Condimentum diam eget placerat</a></li>
+						</ul>
+					</div><!--/who-->
+					<!-- End Choose Us -->
+					<!-- Latest Tweets -->
+					<div class="blog-twitter">
+						<div class="headline"><h3>Latest Tweets</h3></div>
+						<div class="blog-twitter-inner">
+							<i class="icon-twitter"></i>
+							<a href="#">htmlstream</a>
+							At vero seos etodela ccusamus et iusto odio dignissimos.
+							<a href="#">http://t.co/sBav7dm</a>
+							<span class="twitter-time">5 hours ago</span>
+						</div>
+						<div class="blog-twitter-inner">
+							<i class="icon-twitter"></i>
+							<a href="#">htmlstream</a>
+							At vero eos et accusamus et iusto odio dignissimos.
+							<a href="#">http://t.co/sBav7dm</a>
+							<span class="twitter-time">5 hours ago</span>
+						</div>
+						<div class="blog-twitter-inner">
+							<i class="icon-twitter"></i>
+							<a href="#">htmlstream</a>
+							At vero eos et accusamus et iusto odio dignissimos.
+							<a href="#">http://t.co/sBav7dm</a>
+							<span class="twitter-time">5 hours ago</span>
+						</div>
+						<div class="blog-twitter-inner">
+							<i class="icon-twitter"></i>
+							<a href="#">htmlstream</a>
+							At vero eos et accusamus et iusto odio dignissimos.
+							<a href="#">http://t.co/sBav7dm</a>
+							<span class="twitter-time">5 hours ago</span>
+						</div>
+					</div><!--/blog-twitter-->
+					<!-- End Latest Tweets -->
+				</div>
+			</div><!--/row-->
+		</div><!--/container-->
+		<!-- End Content Part -->
+		<!--=== Footer Version 1 ===-->
+		<div class="footer-v1">
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<!-- About -->
+						<div class="col-md-3 md-margin-bottom-40">
+							<a href="index.html"><img id="logo-footer" class="footer-logo" src="@Url.Content("~/content/img/logo2-default.png")" alt=""></a>
+							<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+							<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+						</div><!--/col-md-3-->
+						<!-- End About -->
+						<!-- Latest -->
+						<div class="col-md-3 md-margin-bottom-40">
+							<div class="posts">
+								<div class="headline"><h2>Latest Posts</h2></div>
+								<ul class="list-unstyled latest-list">
+									<li>
+										<a href="#">Incredible content</a>
+										<small>May 8, 2014</small>
+									</li>
+									<li>
+										<a href="#">Best shoots</a>
+										<small>June 23, 2014</small>
+									</li>
+									<li>
+										<a href="#">New Terms and Conditions</a>
+										<small>September 15, 2014</small>
+									</li>
+								</ul>
+							</div>
+						</div><!--/col-md-3-->
+						<!-- End Latest -->
+						<!-- Link List -->
+						<div class="col-md-3 md-margin-bottom-40">
+							<div class="headline"><h2>Useful Links</h2></div>
+							<ul class="list-unstyled link-list">
+								<li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+							</ul>
+						</div><!--/col-md-3-->
+						<!-- End Link List -->
+						<!-- Address -->
+						<div class="col-md-3 map-img md-margin-bottom-40">
+							<div class="headline"><h2>Contact Us</h2></div>
+							<address class="md-margin-bottom-40">
+								25, Lorem Lis Street, Orange <br />
+								California, US <br />
+								Phone: 800 123 3456 <br />
+								Fax: 800 123 3456 <br />
+								Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+							</address>
+						</div><!--/col-md-3-->
+						<!-- End Address -->
+					</div>
+				</div>
+			</div><!--/footer-->
+
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p>
+								2015 &copy; All Rights Reserved.
+								<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+							</p>
+						</div>
+
+						<!-- Social Links -->
+						<div class="col-md-6">
+							<ul class="footer-socials list-inline">
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+										<i class="fa fa-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+										<i class="fa fa-google-plus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+										<i class="fa fa-pinterest"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- End Social Links -->
+					</div>
+				</div>
+			</div><!--/copyright-->
+		</div>
+		<!--=== End Footer Version 1 ===-->
+	</div><!--/wrapper-->
+
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+	<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="assets/plugins/horizontal-parallax/js/sequence.jquery-min.js"></script>
+	<script type="text/javascript" src="assets/plugins/horizontal-parallax/js/horizontal-parallax.js"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/owl-recent-works.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			App.init();
+			OwlRecentWorks.initOwlRecentWorksV2();
+		});
+	</script>
+</body>
+</html>	
