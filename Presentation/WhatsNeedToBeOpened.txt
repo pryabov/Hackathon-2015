@@ -1,0 +1,10 @@
+1. PowerShell console
+
+2. Old Management Portal: https://manage.windowsazure.com
+3. New Management Portal: https://portal.azure.com
+
+4. Free Trial http://azure.microsoft.com/en-us/pricing/free-trial/
+
+5. FileZilla with FTP access3
+
+6.Visual Studio with Sample Project
