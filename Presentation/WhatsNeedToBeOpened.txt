@@ -5,6 +5,8 @@
 
 4. Free Trial http://azure.microsoft.com/en-us/pricing/free-trial/
 
+4.1 Azure SDK http://azure.microsoft.com/en-us/downloads/ 
+
 5. FileZilla with FTP access3
 
 6.Visual Studio with Sample Project
