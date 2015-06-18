@@ -10,3 +10,5 @@
 5. FileZilla with FTP access3
 
 6.Visual Studio with Sample Project
+
+7. Price Calculator: http://azure.microsoft.com/en-us/pricing/calculator/?scenario=appservice
