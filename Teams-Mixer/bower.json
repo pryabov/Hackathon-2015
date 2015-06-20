@@ -1,0 +1,20 @@
+{
+  "name": "Teams-Mixer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pryabov/Hackathon-2015",
+  "authors": [
+    "pryabov <prpbox@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reset-css": "~2.0.20110126",
+    "knockout": "~3.3.0"
+  }
+}

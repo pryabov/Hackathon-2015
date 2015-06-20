@@ -1,0 +1,66 @@
+html, body{
+	height: 100%;
+}
+
+.page{
+	height: 100%;
+	display: table;
+	width:400px;
+	margin: 0 auto;
+}
+
+.page__cell{
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.teams-list{
+	margin-bottom: 10px;
+}
+
+.teams-list.teams-list--mixing{
+	position: relative;
+	height: 37px;
+}
+
+.teams-list.teams-list--mixing .teams-list__item{
+	position: absolute;
+	top:0;
+	left:0;
+
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.teams-list .teams-list__item{
+	padding: 10px 40px;
+	border: solid 1px grey;
+	margin-bottom: 10px;
+
+	border-radius: 10px;
+	background: white;
+
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.button{
+	padding: 20px 40px;
+	border: solid 1px grey;
+	margin-bottom: 10px;
+	background: green;
+
+	border-radius: 10px;
+
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.button:active{
+	background: #21800d;
+}
