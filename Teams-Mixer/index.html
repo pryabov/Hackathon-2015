@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-	<meta charset="UTF-8">
+	<meta charset="ISO-8859-5">
 	<title>Teams Mixer</title>
 	<link rel="stylesheet" href="bower_components/reset-css/reset.css">
 	<link rel="stylesheet" href="styles/index.css">
@@ -14,16 +14,21 @@
 			<li class="teams-list__item" data-bind="text: name, style: {background: color}"></li>
 		</ul>
 		<!-- /ko -->
-		<!-- ko ifnot: isMixing -->
-		<button class="button" data-bind="click: mixTeams.bind($data)">Mix</button>
-		<!-- /ko -->
+
 
 		<!-- ko if: isMixing -->
 		<ul class="teams-list teams-list--result" data-bind="foreach: teamsResultList">
-			<li class="teams-list__item" data-bind="text: name, style: {background: color}"></li>
+			<li class="teams-list__item" data-bind="style: {background: color}">
+				<span data-bind="text: position"></span>. <span data-bind="text: name"></span>
+			</li>
 		</ul>
 		<!-- /ko -->
 	</div>
+
+	<!-- ko ifnot: isMixing -->
+	<button class="button" data-bind="click: mixTeams.bind($data)">MIX</button>
+	<div class="overlay"></div>
+	<!-- /ko -->
 
 </section>
 <script src="bower_components/knockout/dist/knockout.debug.js"></script>

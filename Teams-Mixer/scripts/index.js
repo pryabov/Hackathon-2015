@@ -1,57 +1,47 @@
 var teams = [
 	{
-		name: 'fdbdsfbd',
-		color: 'red'
+		name: 'Тактический Единорог'
 	},
 	{
-		name: 'fdbdsfbd',
-		color: 'green'
+		name: 'Рубишки'
 	},
 	{
-		name: 'CMD',
-		color: 'yellow'
+		name: 'CMD'
 	},
 	{
-		name: 'Techies',
-		color: 'blue'
+		name: 'Techies'
 	},
 	{
-		name: 'fdbdsfbd',
-		color: 'pink'
+		name: 'Анкерный Болт Сатаны'
 	},
 	{
-		name: '//TODO',
-		color: 'grey'
+		name: '//TODO'
 	},
 	{
 		name: 'Alpha Team',
 		color: 'pink'
 	},
 	{
-		name: 'fdbdsfbd',
-		color: 'grey'
+		name: 'Плюшевая и Терминаторы'
 	},
 	{
-		name: 'Avengers',
-		color: 'pink'
+		name: 'Avengers'
 	},
 	{
-		name: 'fdbdsfbd',
-		color: 'grey'
+		name: 'ПиЧенКи'
 	},
 	{
-		name: '42',
-		color: 'pink'
+		name: '42'
 	},
 	{
-		name: 'D2-D9',
-		color: 'grey'
+		name: 'D2-D9'
 	}
 ];
 
 var TeamViewModel = function(dataModel){
 	this.name = dataModel.name;
-	this.color = ['rgb(', Math.floor(Math.random()*150)+100, ',',Math.floor(Math.random()*150)+100,',',Math.floor(Math.random()*200)+50,')'].join('');
+	this.color = dataModel.color || ['rgb(', Math.floor(Math.random()*150)+100, ',',Math.floor(Math.random()*150)+100,',',Math.floor(Math.random()*200)+50,')'].join('');
+	this.position = ko.observable();
 };
 
 
@@ -84,6 +74,8 @@ PageViewModel.prototype.startFlickering = function(){
 
 	this.mix(function(){
 		var unhappyTeam = self.teamsInitialList.pop();
+		unhappyTeam.position(self.teamsInitialList().length + 1);
+
 		self.teamsResultList.unshift(unhappyTeam);
 
 		if(self.teamsInitialList().length > 0){
